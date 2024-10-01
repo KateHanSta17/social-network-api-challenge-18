@@ -11,7 +11,11 @@
 # Social Network API
 
 ### Description
-Provide a short description of your project, highlighting its purpose and key features. This section should answer questions like: What does the project do? What problem does it solve?
+The Social Network API is a back-end application for a social networking platform, built using Express.js for routing, a MongoDB NoSQL database, and the Mongoose ODM (Object Data Modeling). This API enables users to share thoughts, react to friends’ thoughts, and manage a friend list.
+
+The goal of this API is to handle unstructured data efficiently, a common requirement in social networking platforms where users generate dynamic content such as posts and comments.
+
+This API is fully tested using Insomnia, demonstrating all CRUD operations (Create, Read, Update, and Delete) for users, thoughts, reactions, and friends. The application also ensures proper formatting of data, including timestamps, using either native JavaScript or optional date libraries.
 
 ### Table of Contents
 A list of the sections in your README with links for easy navigation. This is especially useful for longer documents.
@@ -26,40 +30,74 @@ A list of the sections in your README with links for easy navigation. This is es
 - [Contact](#contact)
 ---
 ### Installation
-Step-by-step instructions on how to install and set up your project. Include dependencies that need to be installed, any configuration files, and specific commands to run.
+1. Clone the repository:
+```bash
+  git clone https://github.com/KateHanSta17/social-network-api-challenge-18.git 
+   ```
+2. Navigate into the project directory:
+  ``` bash
+  cd social-network-api-challenge-18
+  ```
+3. Install dependencies:
+  ``` bash
+  npm install
+  ```
+4. Ensure MongoDB is running locally or update your .env file with the correct MongoDB URI.
 
-``` # Example command
-npm install
-```
+5. Start the application:
+  ``` bash
+  npm start
+  ```
+---
 
 ### Usage
-Explain how to use the project after installation. Provide code snippets, screenshots, or terminal commands that showcase common or key functionality.
+You can add a bit more detail about how the API is intended to be tested, even before you build the full app. It might be useful to outline how users can interact with the API through Insomnia, especially for people who may not be familiar with the tool.
 
-``` # Example usage command
-npm start
+```markdown
+### Usage
+Once the server is running, you can use Insomnia to test the API endpoints. The following are some example routes you can test:
+
+- GET all users: `GET /api/users`
+- GET a user by ID: `GET /api/users/:id`
+- POST a new user: `POST /api/users`
+- PUT to update a user by ID: `PUT /api/users/:id`
+- DELETE a user by ID: `DELETE /api/users/:id`
 ```
 
+Command to start the server:
+```bash
+npm start
+```
+---
+
 ### Features
-List the key features of your project. You can bullet point them or list them out.
-- Feature 1
-- Feature 2
-- Feature 3
+- Users can be created, updated, and deleted. 
+- Each user has a username, email, and a list of friends (represented by other user IDs).
+- Thoughts are like posts or status updates. Each thought is associated with a user and can be created, updated, and deleted.
+- Reactions are like comments or replies to thoughts. These reactions are nested within thought documents.
+- Friend Lists allow users to add or remove friends, fostering social interaction within the platform.
+- Data is managed in MongoDB, using Mongoose to define schemas and handle relationships between users, thoughts, reactions, and friends.
+
+---
 
 ### Technologies Used
-A list of the programming languages, frameworks, libraries, or tools you used for the project.
+- **Express.js**: For routing and handling HTTP requests.
+- **MongoDB**: For the NoSQL database.
+- **Mongoose**: For data modeling and interacting with MongoDB.
+- **Insomnia**: For testing the API routes.
+- **Day.js** (or **Moment.js**): For formatting timestamps
+- **Nodemon**: For development, enabling automatic server restarts.
+- **dotenv**: For managing environment variables.
 
-- Language/Tool 1
-- Language/Tool 2
-- Language/Tool 3
+---
 
 ### License
-If your project is open-source, include the type of license under which the project is distributed (e.g., MIT, GPL).
+Open-source, licensed under MIT.
 
-### Contributing
-If applicable, explain how others can contribute to the project. Include guidelines or a link to a ```CONTRIBUTING.md``` file if you have one.
+---
 
 ### Contact
-Provide your contact information or relevant links (GitHub, LinkedIn) so that others can reach out with questions or suggestions.
+You can find the author of this project via [GitHub](https://github.com/KateHanSta17).
 
 ---
 ## PROJECT OUTLINE
