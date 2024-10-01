@@ -79,6 +79,9 @@ web_modules/
 .env.production.local
 .env.local
 
+# MongoDB database files
+/data/db/
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
@@ -128,3 +131,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Jest Coverage Reports
+/coverage/
+
+# VSCode settings
+.vscode/
