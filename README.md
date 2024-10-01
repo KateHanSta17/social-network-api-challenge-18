@@ -1,5 +1,68 @@
-# 18 NoSQL: Social Network API
+## Bootcamp Challenge 18 NoSQL: Social Network API
 
+### GitHub Repo
+[Social Network API Challenge 18](https://github.com/KateHanSta17/social-network-api-challenge-18)
+
+### Walkthrough Video Link
+[placeholder](placeholderURL.com)
+
+---
+
+# Social Network API
+
+### Description
+Provide a short description of your project, highlighting its purpose and key features. This section should answer questions like: What does the project do? What problem does it solve?
+
+### Table of Contents
+A list of the sections in your README with links for easy navigation. This is especially useful for longer documents.
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [License](#license)
+- [Contributing](#contributing)
+- [Contact](#contact)
+---
+### Installation
+Step-by-step instructions on how to install and set up your project. Include dependencies that need to be installed, any configuration files, and specific commands to run.
+
+``` # Example command
+npm install
+```
+
+### Usage
+Explain how to use the project after installation. Provide code snippets, screenshots, or terminal commands that showcase common or key functionality.
+
+``` # Example usage command
+npm start
+```
+
+### Features
+List the key features of your project. You can bullet point them or list them out.
+- Feature 1
+- Feature 2
+- Feature 3
+
+### Technologies Used
+A list of the programming languages, frameworks, libraries, or tools you used for the project.
+
+- Language/Tool 1
+- Language/Tool 2
+- Language/Tool 3
+
+### License
+If your project is open-source, include the type of license under which the project is distributed (e.g., MIT, GPL).
+
+### Contributing
+If applicable, explain how others can contribute to the project. Include guidelines or a link to a ```CONTRIBUTING.md``` file if you have one.
+
+### Contact
+Provide your contact information or relevant links (GitHub, LinkedIn) so that others can reach out with questions or suggestions.
+
+---
+## PROJECT OUTLINE
 ## Your Task
 
 MongoDB is a popular choice for many social networks due to its speed with large amounts of data and flexibility with unstructured data. Over the last part of this course, you’ll use several of the technologies that social networking platforms use in their full-stack applications. Because the foundation of these applications is data, it’s important that you understand how to build and structure the API first.
