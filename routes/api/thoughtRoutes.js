@@ -1,6 +1,14 @@
 // routes/api/thoughtRoutes.js
 const router = require('express').Router();
-import { getAllThoughts, getThoughtById, createThought, updateThought, deleteThought, addReaction, removeReaction } from '../../controllers/thoughtController';
+const {
+  getAllThoughts,
+  getThoughtById,
+  createThought,
+  updateThought,
+  deleteThought,
+  addReaction,
+  removeReaction,
+} = require('../../controllers/thoughtController');
 
 // /api/thoughts
 router.route('/')
@@ -21,4 +29,4 @@ router.route('/:thoughtId/reactions')
 router.route('/:thoughtId/reactions/:reactionId')
   .delete(removeReaction); // Remove a reaction from a thought
 
-export default router;
+module.exports = router;

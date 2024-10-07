@@ -1,9 +1,9 @@
 // config/connection.js
-import { connect, connection } from 'mongoose';
+const mongoose = require('mongoose');
 
 const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/socialnetworkDB';
 
-connect(mongoURI)
+mongoose.connect(mongoURI)
   .then(() => {
     console.log('Successfully connected to MongoDB');
   })
@@ -12,4 +12,4 @@ connect(mongoURI)
     process.exit(1); // Exit the process with a failure code
   });
 
-export default connection;
+module.exports = mongoose.connection;
