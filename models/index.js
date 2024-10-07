@@ -1,4 +1,5 @@
-import User from './User';
-import Thought from './Thought';
+// models/index.js
+const User = require('./user');
+const Thought = require('./thought');
 
-export default { User, Thought };
+module.exports = { User, Thought };

@@ -18,3 +18,7 @@ db.once('open', () => {
     console.log(`API server running on port ${PORT}!`);
   });
 });
+
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', true);
+
