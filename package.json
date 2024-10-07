@@ -1,7 +1,6 @@
 {
   "name": "social-network-api-challenge-18",
   "version": "1.0.0",
-  "type": "module",
   "description": "### GitHub Repo [Social Network API Challenge 18](https://github.com/KateHanSta17/social-network-api-challenge-18)",
   "main": "server.js",
   "scripts": {
