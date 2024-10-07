@@ -51,7 +51,6 @@ A list of the sections in your README with links for easy navigation. This is es
 ---
 
 ### Usage
-You can add a bit more detail about how the API is intended to be tested, even before you build the full app. It might be useful to outline how users can interact with the API through Insomnia, especially for people who may not be familiar with the tool.
 
 ```markdown
 ### Usage
@@ -68,6 +67,15 @@ Command to start the server:
 ```bash
 npm start
 ```
+
+#### App in Action:
+
+- ![Testing ScreenShots 1](./assets/readme-screenshots/app-testing-1.jpg)
+
+- ![Testing ScreenShots 2](./assets/readme-screenshots/app-testing-2.jpg)
+
+- ![Testing ScreenShots 3](./assets/readme-screenshots/app-testing-3.jpg)
+
 ---
 
 ### Features
