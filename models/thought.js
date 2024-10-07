@@ -1,6 +1,6 @@
 // models/Thought.js
 const { Schema, model, Types } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');  // You can implement this utility function
+const dateFormat = require('../utils/dateFormat').default;  // You can implement this utility function
 
 // Reaction Schema (a subdocument for Thought)
 const reactionSchema = new Schema(

@@ -1,7 +1,7 @@
 // server.js
 const express = require('express');
-const db = require('./config/connection'); // MongoDB connection file
-const routes = require('./routes');  // Main route file
+const db = require('./config/connection').default; // MongoDB connection file
+const routes = require('./routes').default;  // Main route file
 
 const PORT = process.env.PORT || 3001;
 const app = express();

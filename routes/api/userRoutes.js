@@ -1,14 +1,6 @@
 // routes/api/userRoutes.js
 const router = require('express').Router();
-const {
-  getAllUsers,
-  getUserById,
-  createUser,
-  updateUser,
-  deleteUser,
-  addFriend,
-  removeFriend,
-} = require('../../controllers/userController');
+import { getAllUsers, getUserById, createUser, updateUser, deleteUser, addFriend, removeFriend } from '../../controllers/userController';
 
 // /api/users
 router.route('/')
@@ -26,4 +18,4 @@ router.route('/:userId/friends/:friendId')
   .post(addFriend)      // Add a friend to user's friend list
   .delete(removeFriend); // Remove a friend from user's friend list
 
-module.exports = router;
+export default router;

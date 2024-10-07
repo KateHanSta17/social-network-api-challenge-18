@@ -1,4 +1,4 @@
-import User from './User';
-import Thought from './Thought';
+import User from './user';
+import Thought from './thought';
 
 export default { User, Thought };
