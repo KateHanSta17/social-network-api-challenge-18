@@ -4,7 +4,9 @@
 [Social Network API Challenge 18](https://github.com/KateHanSta17/social-network-api-challenge-18)
 
 ### Walkthrough Video Link
-[placeholder](placeholderURL.com)
+[Google Drive Screen Recording](https://drive.google.com/file/d/1zRv8roTpRDddJ8T1oEFxEIcg-a8e1Dl8/view)
+
+_Additional screen shots & instructions below_
 
 ---
 
@@ -46,7 +48,7 @@ A list of the sections in your README with links for easy navigation. This is es
 
 5. Start the application:
   ``` bash
-  npm start
+  npm start OR node server.js
   ```
 ---
 
@@ -65,8 +67,58 @@ Once the server is running, you can use Insomnia to test the API endpoints. The 
 
 Command to start the server:
 ```bash
-npm start
+npm start 
+``` 
+OR 
+``` bash
+node server.js
 ```
+#### GET Routes:
+##### Get all Users
+- (Using Insomnia) make a ``` GET ``` request to ``` /api/users ```.
+
+##### Get a single user by ID
+- Make a ``` GET ``` request to ``` /api/users/:userId ``` to retrieve a specific user.
+
+##### Get all thoughts
+- Make a ``` GET ``` request to ``` /api/thoughts ```. 
+
+##### Get a thought by ID
+- Make a ``` GET ``` request to ``` /api/thoughts/:thoughtId ``` to retrieve a specific thought.
+
+#### POST Routes:
+##### Create a User
+- Make a ``` POST ``` request to ``` /api/users ```, providing a username and email. 
+
+##### Create a Thought
+- Make a ``` POST ``` request to ``` /api/thoughts ```, providing a thoughtText, username, and userId. 
+
+##### Create a Reaction
+- Make a ``` POST ``` request to ``` /api/thoughts/:thoughtId/reactions ``` to add a reaction to a thought.
+
+#### PUT Routes:
+##### Update a User
+- Make a ``` PUT ``` request to ``` /api/users/:userId ``` to update the user’s information (e.g., username or email).
+
+##### Update a thought
+- make a ``` PUT ``` request to ``` /api/thoughts/:thoughtId ``` to update the thought text.
+
+#### DELETE Routes:
+##### Delete a User
+- Make a ``` DELETE ``` request to ``` /api/users/:userId ``` to remove a user by their ``` userId ```.
+
+##### Delete a Thought
+- Make a ``` DELETE ``` request to ``` /api/thoughts/:thoughtId ``` to remove a thought by its ``` thoughtId ```.
+
+##### Delete a Reacion
+- Make a ``` DELETE ``` request to ``` /api/thoughts/:thoughtId/reactions/:reactionId ``` to remove a reaction from a thought.
+
+#### Friend Management:
+##### Add a Friend
+- Make a ``` POST ``` request to ``` /api/users/:userId/friends/:friendId ``` to add a friend to a user's friend list.
+
+##### Remove a Friend
+- Make a ``` DELETE ``` request to ``` /api/users/:userId/friends/:friendId ``` to remove a friend from the user’s friend list.
 
 #### App in Action:
 
@@ -75,6 +127,20 @@ npm start
 - ![Testing ScreenShots 2](./assets/readme-screenshots/app-testing-2.jpg)
 
 - ![Testing ScreenShots 3](./assets/readme-screenshots/app-testing-3.jpg)
+
+- ![Testing ScreenShots 4](./assets/readme-screenshots/app-testing-4.jpg)
+
+- ![Testing ScreenShots 5](./assets/readme-screenshots/app-testing-5.jpg)
+
+- ![Testing ScreenShots 6](./assets/readme-screenshots/app-testing-6.jpg)
+
+- ![Testing ScreenShots 7](./assets/readme-screenshots/app-testing-7.jpg)
+
+- ![Testing ScreenShots 8](./assets/readme-screenshots/app-testing-8.jpg)
+
+- ![Testing ScreenShots 9](./assets/readme-screenshots/app-testing-9.jpg)
+
+- ![Testing ScreenShots 10](./assets/readme-screenshots/app-testing-10.jpg)
 
 ---
 
